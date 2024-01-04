@@ -28,6 +28,9 @@ public class SelectLevelView : BaseView
     public void ShowLevelDes()
     {
         Find("level").SetActive(true);
+        LevelData current = Controller.GetModel<LevelModel>().current;
+        Find<Text>("level/name/txt").text = current.Name;
+        Find<Text>("level/des/txt").text = current.Des;
     }
 
     //隐藏关卡

@@ -5,6 +5,9 @@ using UnityEngine;
 public class LevelController : BaseController
 {
     public LevelController() : base(){
+
+        SetModel(new LevelModel());
+
         GameApp.ViewMgr.Register(ViewType.SelectLevelView, new ViewInfo()
         {
             PrefabName = "SelectLevelView",
@@ -14,6 +17,12 @@ public class LevelController : BaseController
 
         InitModuleEvent();
         InitGlobalEvent();
+    }
+
+    public override void Init()
+    {
+        base.Init();
+        model.Init();
     }
 
     public override void InitModuleEvent()
@@ -37,6 +46,11 @@ public class LevelController : BaseController
 
     private void onShowLevelDesCallBack(System.Object args)
     {
+        Debug.Log("levelId:" + args.ToString());
+
+        LevelModel levelModel = GetModel<LevelModel>();
+        levelModel.current = levelModel.GetLevel(int.Parse(args.ToString()));
+
         GameApp.ViewMgr.GetView<SelectLevelView>((int)ViewType.SelectLevelView).ShowLevelDes();
     }
 

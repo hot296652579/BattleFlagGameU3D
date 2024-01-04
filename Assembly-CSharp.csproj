@@ -78,6 +78,7 @@
     <Compile Include="Assets/Scripts/GameScene.cs" />
     <Compile Include="Assets/Scripts/Module/Loading/LoadingModel.cs" />
     <Compile Include="Assets/Scripts/Module/Loading/LoadingView.cs" />
+    <Compile Include="Assets/Scripts/Module/Level/LevelModel.cs" />
     <Compile Include="Assets/Scripts/MVC/View/BaseView.cs" />
     <Compile Include="Assets/Scripts/MVC/ControllerType.cs" />
     <Compile Include="Assets/Scripts/MVC/Controller/BaseController.cs" />
