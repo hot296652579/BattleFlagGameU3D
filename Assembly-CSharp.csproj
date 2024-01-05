@@ -62,7 +62,9 @@
     <Compile Include="Assets/Scripts/Module/GameUI/SelectLevelView.cs" />
     <Compile Include="Assets/Scripts/Module/Level/Component/PlayerController.cs" />
     <Compile Include="Assets/Scripts/Common/Singleton.cs" />
+    <Compile Include="Assets/Scripts/Module/Fight/FightSelectHeroView.cs" />
     <Compile Include="Assets/Scripts/MVC/Model/BaseModel.cs" />
+    <Compile Include="Assets/Scripts/Module/Fight/FightController.cs" />
     <Compile Include="Assets/Scripts/Module/GameUI/MessageView.cs" />
     <Compile Include="Assets/Scripts/Sound/SoundMgr.cs" />
     <Compile Include="Assets/Scripts/Config/ConfigData.cs" />
@@ -88,6 +90,7 @@
     <Compile Include="Assets/Scripts/Module/GameUI/SetView.cs" />
     <Compile Include="Assets/Scripts/MVC/ViewType.cs" />
     <Compile Include="Assets/Scripts/Module/Level/LevelController.cs" />
+    <Compile Include="Assets/Scripts/Module/Fight/FightView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/Resources/Data/role.txt" />

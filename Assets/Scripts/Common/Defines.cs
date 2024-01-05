@@ -8,6 +8,7 @@ public static class Defines
     public static readonly string OpenMessageView = "OpenMessageView";
     public static readonly string OpenSelectLevelView = "OpenSelectLevelView";
     public static readonly string OpenLoadingView = "OpenLoadingView";
+    public static readonly string BeginFight = "BeginFight";
 
 
     //全局事件
