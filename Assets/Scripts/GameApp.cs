@@ -9,6 +9,7 @@ public class GameApp : Singleton<GameApp>
     public static ConfigMgr ConfigMgr;
     public static CameraMgr CameraMgr;
     public static MessageCenter MessageCenter;
+    public static TimerMgr TimerMgr;
 
     public override void Init()
     {
@@ -20,11 +21,13 @@ public class GameApp : Singleton<GameApp>
         ConfigMgr = new ConfigMgr();
         CameraMgr = new CameraMgr();
         MessageCenter = new MessageCenter();
+        TimerMgr = new TimerMgr();
     }
 
     public override void Update(float t)
     {
         base.Update(t);
+        TimerMgr.OnUpdate(t);
     }
 
     public override void onDestory()

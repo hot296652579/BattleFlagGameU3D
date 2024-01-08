@@ -74,12 +74,15 @@
     <Compile Include="Assets/Scripts/Module/Level/Component/BuildPoint.cs" />
     <Compile Include="Assets/Scripts/Module/GameUIController.cs" />
     <Compile Include="Assets/Scripts/GameApp.cs" />
+    <Compile Include="Assets/Scripts/Timer/TimerMgr.cs" />
     <Compile Include="Assets/Scripts/Common/Defines.cs" />
+    <Compile Include="Assets/Scripts/Timer/GameTimer.cs" />
     <Compile Include="Assets/Scripts/CameraMgr.cs" />
     <Compile Include="Assets/Scripts/Common/MessageCenter.cs" />
     <Compile Include="Assets/Scripts/GameScene.cs" />
     <Compile Include="Assets/Scripts/Module/Loading/LoadingModel.cs" />
     <Compile Include="Assets/Scripts/Module/Loading/LoadingView.cs" />
+    <Compile Include="Assets/Scripts/Timer/GameTimerData.cs" />
     <Compile Include="Assets/Scripts/Module/Level/LevelModel.cs" />
     <Compile Include="Assets/Scripts/MVC/View/BaseView.cs" />
     <Compile Include="Assets/Scripts/MVC/ControllerType.cs" />
