@@ -1,10 +1,19 @@
 ﻿<Properties StartupConfiguration="{29FE7DAE-1E07-5A37-ADB5-A94DB0A7C69A}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Module/Loading/LoadingController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Module/Fight/FightMgr/MapMgr.cs">
     <Files>
-      <File FileName="Assets/Scripts/Module/Loading/LoadingController.cs" Line="44" Column="30" />
-      <File FileName="Assets/Scripts/Timer/TimerMgr.cs" Line="11" Column="14" />
-      <File FileName="Assets/Scripts/Timer/GameTimer.cs" Line="22" Column="27" />
-      <File FileName="Assets/Scripts/Timer/GameTimerData.cs" Line="16" Column="25" />
+      <File FileName="Assets/Scripts/Module/Fight/FightMgr/FightUnitBase.cs" Line="10" Column="1" />
+      <File FileName="Assets/Scripts/Module/Fight/FightMgr/FightIdle.cs" />
+      <File FileName="Assets/Scripts/Module/Fight/FightMgr/FightWorldMgr.cs" />
+      <File FileName="Assets/Scripts/Module/Fight/FightMgr/Block.cs" />
+      <File FileName="Assets/Scripts/Module/Fight/FightMgr/MapMgr.cs" Line="32" Column="1" />
+      <File FileName="Assets/Scripts/Module/Fight/FightMgr/FightEnter.cs" />
+      <File FileName="Assets/Scripts/Module/Fight/FightController.cs" />
+      <File FileName="Assets/Scripts/Module/GameUI/SelectLevelView.cs" Line="46" Column="39" />
+      <File FileName="Assets/Scripts/MVC/Controller/BaseController.cs" />
+      <File FileName="Assets/Scripts/Module/Loading/LoadingController.cs" />
+      <File FileName="Assets/Scripts/GameScene.cs" />
+      <File FileName="Assets/Scripts/Module/Fight/FightSelectHeroView.cs" />
+      <File FileName="Assets/Scripts/Module/Fight/FightView.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,20 +22,20 @@
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
                 <Node name="Module" expanded="True">
-                  <Node name="Fight" expanded="True" />
+                  <Node name="Fight" expanded="True">
+                    <Node name="FightMgr" expanded="True">
+                      <Node name="MapMgr.cs" selected="True" />
+                    </Node>
+                  </Node>
                   <Node name="Game" expanded="True" />
                   <Node name="GameUI" expanded="True" />
                   <Node name="Level" expanded="True">
                     <Node name="Component" expanded="True" />
                   </Node>
-                  <Node name="Loading" expanded="True">
-                    <Node name="LoadingController.cs" selected="True" />
-                  </Node>
+                  <Node name="Loading" expanded="True" />
                 </Node>
                 <Node name="MVC" expanded="True">
                   <Node name="Controller" expanded="True" />
-                  <Node name="Model" expanded="True" />
-                  <Node name="View" expanded="True" />
                 </Node>
                 <Node name="Timer" expanded="True" />
               </Node>

@@ -10,6 +10,8 @@ public class GameApp : Singleton<GameApp>
     public static CameraMgr CameraMgr;
     public static MessageCenter MessageCenter;
     public static TimerMgr TimerMgr;
+    public static FightWorldMgr FightWorldMgr;
+    public static MapMgr MapMgr;
 
     public override void Init()
     {
@@ -22,12 +24,15 @@ public class GameApp : Singleton<GameApp>
         CameraMgr = new CameraMgr();
         MessageCenter = new MessageCenter();
         TimerMgr = new TimerMgr();
+        FightWorldMgr = new FightWorldMgr();
+        MapMgr = new MapMgr();
     }
 
     public override void Update(float t)
     {
         base.Update(t);
         TimerMgr.OnUpdate(t);
+        FightWorldMgr.Update(t);
     }
 
     public override void onDestory()
