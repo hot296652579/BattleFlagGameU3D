@@ -12,6 +12,7 @@ public class GameApp : Singleton<GameApp>
     public static TimerMgr TimerMgr;
     public static FightWorldMgr FightWorldMgr;
     public static MapMgr MapMgr;
+    public static GameDataManager GameDataManager;
 
     public override void Init()
     {
@@ -26,6 +27,7 @@ public class GameApp : Singleton<GameApp>
         TimerMgr = new TimerMgr();
         FightWorldMgr = new FightWorldMgr();
         MapMgr = new MapMgr();
+        GameDataManager = new GameDataManager();
     }
 
     public override void Update(float t)

@@ -1,17 +1,23 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class FightSelectHeroView : BaseView
 {
-    // Use this for initialization
-    void Start()
+    public override void Open(params object[] args)
     {
+        base.Open(args);
 
-    }
+        GameObject prefabObj = Find("bottom/grid/item");
+        Transform gridTf = Find("bottom/grid").transform;
 
-    // Update is called once per frame
-    void Update()
-    {
-
+        for(int i = 0;i < GameApp.GameDataManager.heros.Count; i++)
+        {
+            Dictionary<string, string> data = GameApp.ConfigMgr.GetConfigDdata("player").GetDataById(GameApp.GameDataManager.heros[i]);
+            GameObject obj = Object.Instantiate(prefabObj, gridTf);
+            obj.SetActive(true);
+            HeroItem item = obj.AddComponent<HeroItem>();
+            item.Init(data);
+        }
     }
 }
