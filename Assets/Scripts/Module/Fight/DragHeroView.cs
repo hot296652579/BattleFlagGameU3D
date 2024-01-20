@@ -27,7 +27,6 @@ public class DragHeroView : BaseView
 
     public override void Open(params object[] args)
     {
-        base.Open(args);
         transform.GetComponent<Image>().SetIcon(args[0].ToString());
     }
 }

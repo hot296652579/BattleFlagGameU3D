@@ -81,6 +81,7 @@
     <Compile Include="Assets/Scripts/GameApp.cs" />
     <Compile Include="Assets/Scripts/Timer/TimerMgr.cs" />
     <Compile Include="Assets/Scripts/Common/Defines.cs" />
+    <Compile Include="Assets/Scripts/Module/Fight/FightMgr/Hero.cs" />
     <Compile Include="Assets/Scripts/Timer/GameTimer.cs" />
     <Compile Include="Assets/Scripts/Module/Fight/DragHeroView.cs" />
     <Compile Include="Assets/Scripts/CameraMgr.cs" />
@@ -94,6 +95,7 @@
     <Compile Include="Assets/Scripts/Module/Level/LevelModel.cs" />
     <Compile Include="Assets/Scripts/MVC/View/BaseView.cs" />
     <Compile Include="Assets/Scripts/MVC/ControllerType.cs" />
+    <Compile Include="Assets/Scripts/Module/Fight/FightMgr/ModelBase.cs" />
     <Compile Include="Assets/Scripts/MVC/Controller/BaseController.cs" />
     <Compile Include="Assets/Scripts/Module/GameUI/StartView.cs" />
     <Compile Include="Assets/Scripts/MVC/ViewMgr.cs" />

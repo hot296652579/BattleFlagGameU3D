@@ -13,6 +13,7 @@ public class FightWorldMgr
 {
     public GameState state = GameState.Idle;
     private FightUnitBase current;//处于战斗单元
+    public List<Hero> heros;//战斗单元集合
 
     public FightUnitBase Current
     {
@@ -24,6 +25,7 @@ public class FightWorldMgr
 
     public FightWorldMgr()
     {
+        heros = new List<Hero>();
         ChangeState(GameState.Idle);
     }
 
@@ -55,5 +57,18 @@ public class FightWorldMgr
         }
 
         _current.Init();
+    }
+
+    //添加英雄
+    public void AddHero(Block b, Dictionary<string,string> data)
+    {
+        GameObject obj = Object.Instantiate(Resources.Load($"Model/{data["Model"]}")) as GameObject;
+        Debug.Log("添加英雄 pos:", b);
+        obj.transform.position = new Vector3(b.transform.position.x, b.transform.position.y, -1);
+        Hero hero = obj.AddComponent<Hero>();
+        hero.Init(data, b.RowIndex, b.ColIndex);
+        //这个位置被占领了 设置方块为障碍物
+        b.Type = BlockType.Obstacle;
+        heros.Add(hero);
     }
 }
