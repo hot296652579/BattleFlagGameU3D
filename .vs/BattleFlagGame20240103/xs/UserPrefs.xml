@@ -1,15 +1,11 @@
 ﻿<Properties StartupConfiguration="{29FE7DAE-1E07-5A37-ADB5-A94DB0A7C69A}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Module/Fight/FightMgr/Block.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Module/Fight/FightMgr/ModelBase.cs">
     <Files>
-      <File FileName="Assets/Scripts/Module/Fight/FightSelectHeroView.cs" Line="20" Column="29" />
-      <File FileName="Assets/Scripts/Module/Fight/Components/HeroItem.cs" Line="41" Column="43" />
-      <File FileName="Assets/Scripts/Module/Fight/DragHeroView.cs" Line="21" Column="20" />
-      <File FileName="Assets/Scripts/Module/Fight/FightController.cs" Line="29" Column="30" />
-      <File FileName="Assets/Scripts/Common/Tools.cs" Line="16" Column="64" />
-      <File FileName="Assets/Scripts/Module/Fight/FightMgr/ModelBase.cs" Line="5" Column="14" />
-      <File FileName="Assets/Scripts/Module/Fight/FightMgr/Hero.cs" Line="19" Column="2" />
-      <File FileName="Assets/Scripts/Module/Fight/FightMgr/FightWorldMgr.cs" Line="74" Column="2" />
-      <File FileName="Assets/Scripts/Module/Fight/FightMgr/Block.cs" Line="10" Column="1" />
+      <File FileName="Assets/Scripts/Common/Tools.cs" Line="23" Column="6" />
+      <File FileName="Assets/Scripts/Module/Fight/FightMgr/Block.cs" Line="11" Column="8" />
+      <File FileName="Assets/Scripts/Module/Fight/Components/HeroItem.cs" Line="42" Column="30" />
+      <File FileName="Assets/Scripts/UserInputMgr.cs" Line="22" Column="38" />
+      <File FileName="Assets/Scripts/Module/Fight/FightMgr/ModelBase.cs" Line="53" Column="6" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -22,7 +18,7 @@
                   <Node name="Fight" expanded="True">
                     <Node name="Components" expanded="True" />
                     <Node name="FightMgr" expanded="True">
-                      <Node name="Block.cs" selected="True" />
+                      <Node name="ModelBase.cs" selected="True" />
                     </Node>
                   </Node>
                   <Node name="GameUI" expanded="True" />

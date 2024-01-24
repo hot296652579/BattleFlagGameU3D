@@ -11,22 +11,28 @@ public class UserInputMgr
         {
             if (EventSystem.current.IsPointerOverGameObject())
             {
-                //�������UI
+                // 点击 UI
             }
             else
             {
-                Tools.ScreenPointToRay2D(Camera.main, Input.mousePosition, delegate (Collider2D col)
-                 {
-                     if(col != null)
-                     {
-                         //��⵽����ײ�������
-                         GameApp.MessageCenter.PostEvent(col.gameObject, Defines.OnSelectEvent);
-                     }
-                     else
-                     {
-                         GameApp.MessageCenter.PostEvent(col.gameObject, Defines.OnUnSelectEvent);
-                     }
-                 });
+                Vector3 mousePos = Input.mousePosition;
+                Ray ray = Camera.main.ScreenPointToRay(mousePos);
+                RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction);
+
+                if (hit.collider != null)
+                {
+                    // 检测到碰撞体
+                    if (hit.collider.CompareTag("Hero"))
+                    {
+                        // 如果点击的是英雄，执行选中操作
+                        GameApp.MessageCenter.PostEvent(hit.collider.gameObject, Defines.OnSelectEvent);
+                    }
+                    else if (hit.collider.CompareTag("Block"))
+                    {
+                        // 如果点击的是 Block，执行取消选中英雄的操作
+                        GameApp.MessageCenter.PostEvent(Defines.OnUnSelectEvent);
+                    }
+                }
             }
         }
     }

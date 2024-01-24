@@ -42,7 +42,7 @@ public class ModelBase : MonoBehaviour
         GameApp.MessageCenter.RemoveEvent(Defines.OnUnSelectEvent, OnUnSelectCallBack);
     }
 
-    //选中回调
+    //閫変腑鍥炴帀
     protected virtual void OnSelectCallBack(System.Object arg)
     {
         Debug.Log("ModelBase OnSelectCallBack+++++");
@@ -52,7 +52,7 @@ public class ModelBase : MonoBehaviour
         bodySp.color = Color.red;
     }
 
-    //未选中回调
+    //鏈�変腑鍥炴帀
     protected virtual void OnUnSelectCallBack(System.Object arg)
     {
         bodySp.color = Color.white;

@@ -29,7 +29,6 @@ public class Block : MonoBehaviour
 
     void OnSelectCallBack(System.Object arg)
     {
-        Debug.Log("Block OnSelectCallBack+++++");
         GameApp.MessageCenter.PostEvent(Defines.OnUnSelectEvent);
     }
 
