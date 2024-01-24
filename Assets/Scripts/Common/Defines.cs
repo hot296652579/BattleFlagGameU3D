@@ -14,4 +14,7 @@ public static class Defines
     //全局事件
     public static readonly string ShowLevelDesEvent = "ShowLevelDesEvent";
     public static readonly string HideLevelDesEvent = "HideLevelDesEvent";
+
+    public static readonly string OnSelectEvent = "OnSelectEvent"; 
+    public static readonly string OnUnSelectEvent = "OnUnSelectEvent";
 }

@@ -13,6 +13,7 @@ public class GameApp : Singleton<GameApp>
     public static FightWorldMgr FightWorldMgr;
     public static MapMgr MapMgr;
     public static GameDataManager GameDataManager;
+    public static UserInputMgr UserInputMgr;
 
     public override void Init()
     {
@@ -28,11 +29,13 @@ public class GameApp : Singleton<GameApp>
         FightWorldMgr = new FightWorldMgr();
         MapMgr = new MapMgr();
         GameDataManager = new GameDataManager();
+        UserInputMgr = new UserInputMgr();
     }
 
     public override void Update(float t)
     {
         base.Update(t);
+        UserInputMgr.Update();
         TimerMgr.OnUpdate(t);
         FightWorldMgr.Update(t);
     }

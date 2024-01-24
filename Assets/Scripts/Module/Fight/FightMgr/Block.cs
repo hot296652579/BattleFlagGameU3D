@@ -23,6 +23,19 @@ public class Block : MonoBehaviour
         selectSp = transform.Find("select").GetComponent<SpriteRenderer>();
         gridSp = transform.Find("grid").GetComponent<SpriteRenderer>();
         dirSp = transform.Find("dir").GetComponent<SpriteRenderer>();
+
+        GameApp.MessageCenter.AddEvent(gameObject, Defines.OnSelectEvent, OnSelectCallBack);
+    }
+
+    void OnSelectCallBack(System.Object arg)
+    {
+        Debug.Log("Block OnSelectCallBack+++++");
+        GameApp.MessageCenter.PostEvent(Defines.OnUnSelectEvent);
+    }
+
+    private void OnDestroy()
+    {
+        GameApp.MessageCenter.RemoveEvent(gameObject, Defines.OnSelectEvent, OnSelectCallBack);
     }
 
     private void OnMouseEnter()

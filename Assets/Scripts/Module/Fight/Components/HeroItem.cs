@@ -46,6 +46,7 @@ public class HeroItem : MonoBehaviour,IBeginDragHandler,IEndDragHandler,IDragHan
                     Destroy(gameObject);
                     //创建英雄物体
                     GameApp.FightWorldMgr.AddHero(b, data);
+
                 }
             }
         });

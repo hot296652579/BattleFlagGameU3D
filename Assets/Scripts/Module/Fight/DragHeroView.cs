@@ -22,6 +22,7 @@ public class DragHeroView : BaseView
         }
 
         Vector2 worldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Debug.Log("DragHeroView worldPos:" + worldPos);
         transform.position = worldPos;
     }
 
