@@ -43,4 +43,30 @@ public class MapMgr
             mapArr[row, col] = b;
         }
     }
+
+    public BlockType GetBlockType(int row,int col)
+    {
+        return mapArr[row, col].Type;
+    }
+
+    //显示移动区域
+    public void ShowStepGrid(ModelBase model,int step)
+    {
+        _BFS bfs = new _BFS(RowCount, ColCount);
+        List<_BFS.Point> points = bfs.Search(model.RowIndex, model.ColIndex, step);
+        for(int i = 0;i < points.Count; i++)
+        {
+            mapArr[points[i].RowIndex, points[i].ColIndex].ShowGrid(Color.blue);
+        }
+    }
+    //隐藏移动区域
+    public void HideStepGrid(ModelBase model,int step)
+    {
+        _BFS bfs = new _BFS(RowCount, ColCount);
+        List<_BFS.Point> points = bfs.Search(model.RowIndex, model.ColIndex, step);
+        for (int i = 0; i < points.Count; i++)
+        {
+            mapArr[points[i].RowIndex, points[i].ColIndex].HideGrid();
+        }
+    }
 }

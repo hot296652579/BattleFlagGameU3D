@@ -46,15 +46,15 @@ public class ModelBase : MonoBehaviour
     protected virtual void OnSelectCallBack(System.Object arg)
     {
         Debug.Log("ModelBase OnSelectCallBack+++++");
+      
         GameApp.MessageCenter.PostEvent(Defines.OnUnSelectEvent);
-
-        //test
-        bodySp.color = Color.red;
+        GameApp.MapMgr.ShowStepGrid(this, Step);
     }
 
     //未选中回掉
     protected virtual void OnUnSelectCallBack(System.Object arg)
     {
-        bodySp.color = Color.white;
+        //bodySp.color = Color.white;
+        GameApp.MapMgr.HideStepGrid(this, Step);
     }
 }

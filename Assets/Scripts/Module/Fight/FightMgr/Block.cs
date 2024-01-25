@@ -47,15 +47,14 @@ public class Block : MonoBehaviour
         selectSp.enabled = false;
     }
 
-    // Start is called before the first frame update
-    void Start()
+    public void ShowGrid(Color color)
     {
-        
+        gridSp.enabled = true;
+        gridSp.color = color;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void HideGrid()
     {
-        
+        gridSp.enabled = false;
     }
 }
