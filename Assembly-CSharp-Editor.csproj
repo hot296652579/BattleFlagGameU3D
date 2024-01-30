@@ -59,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/Editor/MyEditor.cs" />
+    <Compile Include="Assets/Editor/EnemyEditor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/Editor/ExcelResolutionForUnity/Excel.dll" />

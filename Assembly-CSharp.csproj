@@ -70,6 +70,7 @@
     <Compile Include="Assets/Scripts/Module/Fight/FightController.cs" />
     <Compile Include="Assets/Scripts/Module/GameUI/MessageView.cs" />
     <Compile Include="Assets/Scripts/Module/Fight/FightMgr/FightEnter.cs" />
+    <Compile Include="Assets/Scripts/Module/Fight/FightMgr/Enemy.cs" />
     <Compile Include="Assets/Scripts/Module/Fight/FightMgr/FightIdle.cs" />
     <Compile Include="Assets/Scripts/Sound/SoundMgr.cs" />
     <Compile Include="Assets/Scripts/Config/ConfigData.cs" />

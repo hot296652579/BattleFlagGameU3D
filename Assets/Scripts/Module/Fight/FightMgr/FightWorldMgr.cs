@@ -14,6 +14,8 @@ public class FightWorldMgr
     public GameState state = GameState.Idle;
     private FightUnitBase current;//处于战斗单元
     public List<Hero> heros;//战斗单元集合
+    public List<Enemy> enemys;//战斗敌人集合
+    public int RoundCount;//回合数
 
     public FightUnitBase Current
     {
@@ -57,6 +59,20 @@ public class FightWorldMgr
         }
 
         _current.Init();
+    }
+
+    public void EnterFight()
+    {
+        RoundCount = 1;
+        heros = new List<Hero>();
+        enemys = new List<Enemy>();
+
+        GameObject[] objects = GameObject.FindGameObjectsWithTag("Enemy");//敌人添加Enemy标签
+        Debug.Log("enemy:" + objects.Length);
+        for(int i = 0; i < objects.Length; i++)
+        {
+            enemys.Add(objects[i].GetComponent<Enemy>());
+        }
     }
 
     //添加英雄

@@ -8,6 +8,7 @@ public class FightEnter : FightUnitBase
     {
         base.Init();
         GameApp.MapMgr.Init();
+        GameApp.FightWorldMgr.EnterFight();
     }
 
 }
