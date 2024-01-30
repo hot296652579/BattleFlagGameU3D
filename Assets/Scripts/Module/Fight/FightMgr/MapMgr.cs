@@ -49,6 +49,11 @@ public class MapMgr
         return mapArr[row, col].Type;
     }
 
+    public void ChangeBlockType(int row,int col,BlockType type)
+    {
+        mapArr[row, col].Type = type;
+    }
+
     //显示移动区域
     public void ShowStepGrid(ModelBase model,int step)
     {

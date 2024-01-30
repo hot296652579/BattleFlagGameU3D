@@ -1,14 +1,14 @@
 ﻿<Properties StartupConfiguration="{29FE7DAE-1E07-5A37-ADB5-A94DB0A7C69A}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Module/Fight/FightMgr/FightEnter.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Module/Fight/FightController.cs">
     <Files>
-      <File FileName="Assets/Scripts/Module/Fight/FightMgr/ModelBase.cs" Line="5" Column="14" />
-      <File FileName="Assets/Scripts/Module/Fight/FightMgr/Block.cs" />
-      <File FileName="Assets/Scripts/Module/Fight/FightMgr/Enemy.cs" />
-      <File FileName="Assets/Scripts/Module/Fight/FightMgr/Hero.cs" />
-      <File FileName="Assets/Editor/EnemyEditor.cs" Line="29" Column="43" />
-      <File FileName="Assets/Editor/MyEditor.cs" />
-      <File FileName="Assets/Scripts/Module/Fight/FightMgr/FightWorldMgr.cs" Line="57" Column="38" />
-      <File FileName="Assets/Scripts/Module/Fight/FightMgr/FightEnter.cs" Line="11" Column="19" />
+      <File FileName="Assets/Scripts/Module/Fight/FightMgr/FightWorldMgr.cs" Line="63" Column="10" />
+      <File FileName="Assets/Scripts/Module/Fight/FightMgr/FightEnter.cs" />
+      <File FileName="Assets/Scripts/Module/Fight/FightMgr/MapMgr.cs" />
+      <File FileName="Assets/Scripts/Module/Fight/FightMgr/FightPlayerUnit.cs" Line="11" Column="27" />
+      <File FileName="Assets/Scripts/Module/Fight/FightSelectHeroView.cs" Line="7" Column="2" />
+      <File FileName="Assets/Scripts/MVC/ViewType.cs" />
+      <File FileName="Assets/Scripts/Module/Fight/TipView.cs" Line="12" Column="61" />
+      <File FileName="Assets/Scripts/Module/Fight/FightController.cs" Line="38" Column="12" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -21,13 +21,11 @@
                 <Node name="Module" expanded="True">
                   <Node name="Fight" expanded="True">
                     <Node name="Components" expanded="True" />
-                    <Node name="FightMgr" expanded="True">
-                      <Node name="FightEnter.cs" selected="True" />
-                    </Node>
+                    <Node name="FightMgr" expanded="True" />
+                    <Node name="FightController.cs" selected="True" />
                   </Node>
                   <Node name="GameUI" expanded="True" />
                 </Node>
-                <Node name="MVC" expanded="True" />
               </Node>
             </Node>
           </Node>

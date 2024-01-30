@@ -64,6 +64,7 @@
     <Compile Include="Assets/Scripts/UserInputMgr.cs" />
     <Compile Include="Assets/Scripts/Module/Level/Component/PlayerController.cs" />
     <Compile Include="Assets/Scripts/Common/Singleton.cs" />
+    <Compile Include="Assets/Scripts/Module/Fight/TipView.cs" />
     <Compile Include="Assets/Scripts/Module/Fight/FightSelectHeroView.cs" />
     <Compile Include="Assets/Scripts/Module/Fight/FightMgr/MapMgr.cs" />
     <Compile Include="Assets/Scripts/MVC/Model/BaseModel.cs" />
@@ -93,6 +94,7 @@
     <Compile Include="Assets/Scripts/GameScene.cs" />
     <Compile Include="Assets/Scripts/Module/Loading/LoadingModel.cs" />
     <Compile Include="Assets/Scripts/GameDataManager.cs" />
+    <Compile Include="Assets/Scripts/Module/Fight/FightMgr/FightPlayerUnit.cs" />
     <Compile Include="Assets/Scripts/Module/Loading/LoadingView.cs" />
     <Compile Include="Assets/Scripts/Timer/GameTimerData.cs" />
     <Compile Include="Assets/Scripts/Module/Level/LevelModel.cs" />

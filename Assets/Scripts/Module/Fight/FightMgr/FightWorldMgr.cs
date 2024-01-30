@@ -5,7 +5,8 @@ using UnityEngine;
 public enum GameState
 {
     Idle,
-    Enter
+    Enter,
+    Player
 }
 
 //战斗管理器 （管理战斗相关实体 敌人英雄地图格子等）
@@ -56,6 +57,9 @@ public class FightWorldMgr
             case GameState.Enter:
                 _current = new FightEnter();
                 break;
+            case GameState.Player:
+                _current = new FightPlayerUnit();
+                break;
         }
 
         _current.Init();
@@ -71,7 +75,9 @@ public class FightWorldMgr
         Debug.Log("enemy:" + objects.Length);
         for(int i = 0; i < objects.Length; i++)
         {
-            enemys.Add(objects[i].GetComponent<Enemy>());
+            Enemy enemy = objects[i].GetComponent<Enemy>();
+            GameApp.MapMgr.ChangeBlockType(enemy.RowIndex, enemy.ColIndex, BlockType.Obstacle);
+            enemys.Add(enemy);
         }
     }
 
