@@ -18,6 +18,27 @@ public class ModelBase : MonoBehaviour
     public GameObject stopObj;
     public Animator ani;
 
+    private bool _isStop;//是否移动完标记
+
+    public bool IsStop
+    {
+        get { return _isStop; }
+        set {
+            stopObj.SetActive(value);
+
+            if(value == true)
+            {
+                bodySp.color = Color.gray;
+            }
+            else
+            {
+                bodySp.color = Color.white;
+            }
+
+            _isStop = value;
+        }
+    }
+
     private void Awake()
     {
         bodySp = transform.Find("body").GetComponent<SpriteRenderer>();
@@ -44,9 +65,7 @@ public class ModelBase : MonoBehaviour
 
     //选中回掉
     protected virtual void OnSelectCallBack(System.Object arg)
-    {
-        Debug.Log("ModelBase OnSelectCallBack+++++");
-      
+    {      
         GameApp.MessageCenter.PostEvent(Defines.OnUnSelectEvent);
         GameApp.MapMgr.ShowStepGrid(this, Step);
     }

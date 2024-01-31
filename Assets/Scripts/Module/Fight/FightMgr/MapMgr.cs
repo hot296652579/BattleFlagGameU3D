@@ -3,6 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
+
+public enum BlockDirection
+{
+    none = -1,
+    down,
+    horizontal,
+    left,
+    left_down,
+    left_up,
+    right,
+    right_down,
+    right_up,
+    up,
+    vertical,
+    max
+}
+
 public class MapMgr 
 {
     private Tilemap tileMap;
@@ -11,8 +28,16 @@ public class MapMgr
     public int RowCount;
     public int ColCount;
 
+    public List<Sprite> dirSpArr;
+
     public void Init()
     {
+        dirSpArr = new List<Sprite>();
+        for(int i = 0; i < (int)BlockDirection.max; i++)
+        {
+            dirSpArr.Add(Resources.Load<Sprite>($"Icon/{(BlockDirection)i}"));
+        }
+
         tileMap = GameObject.Find("Grid/ground").GetComponent<Tilemap>();
 
         //地图大小
@@ -73,5 +98,10 @@ public class MapMgr
         {
             mapArr[points[i].RowIndex, points[i].ColIndex].HideGrid();
         }
+    }
+
+    public void SetBlockDir(int rowIndex,int colIndex,BlockDirection dir,Color color)
+    {
+        mapArr[rowIndex, colIndex].SetDirSp(dirSpArr[(int)dir], color);
     }
 }

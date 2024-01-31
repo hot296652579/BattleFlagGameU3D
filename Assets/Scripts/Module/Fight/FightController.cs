@@ -37,6 +37,22 @@ public class FightController : BaseController
             Sorting_Order = 2
         });
 
+        GameApp.ViewMgr.Register(ViewType.HeroDesView, new ViewInfo()
+        {
+            PrefabName = "HeroDesView",
+            controller = this,
+            parentTf = GameApp.ViewMgr.canvasTf,
+            Sorting_Order = 2
+        });
+
+        GameApp.ViewMgr.Register(ViewType.EnemyDesView, new ViewInfo()
+        {
+            PrefabName = "EnemyDesView",
+            controller = this,
+            parentTf = GameApp.ViewMgr.canvasTf,
+            Sorting_Order = 2
+        });
+
         InitModuleEvent();
     }
 

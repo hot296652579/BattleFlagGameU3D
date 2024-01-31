@@ -1,14 +1,14 @@
 ﻿<Properties StartupConfiguration="{29FE7DAE-1E07-5A37-ADB5-A94DB0A7C69A}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Module/Fight/FightController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Module/Fight/FightMgr/MapMgr.cs">
     <Files>
-      <File FileName="Assets/Scripts/Module/Fight/FightMgr/FightWorldMgr.cs" Line="63" Column="10" />
-      <File FileName="Assets/Scripts/Module/Fight/FightMgr/FightEnter.cs" />
-      <File FileName="Assets/Scripts/Module/Fight/FightMgr/MapMgr.cs" />
-      <File FileName="Assets/Scripts/Module/Fight/FightMgr/FightPlayerUnit.cs" Line="11" Column="27" />
-      <File FileName="Assets/Scripts/Module/Fight/FightSelectHeroView.cs" Line="7" Column="2" />
-      <File FileName="Assets/Scripts/MVC/ViewType.cs" />
-      <File FileName="Assets/Scripts/Module/Fight/TipView.cs" Line="12" Column="61" />
-      <File FileName="Assets/Scripts/Module/Fight/FightController.cs" Line="38" Column="12" />
+      <File FileName="Assets/Scripts/Module/Fight/FightMgr/Hero.cs" Line="31" Column="14" />
+      <File FileName="Assets/Scripts/Module/Fight/FightMgr/ModelBase.cs" Line="28" Column="1" />
+      <File FileName="Assets/Scripts/Module/Fight/FightMgr/MapMgr.cs" Line="41" Column="74" />
+      <File FileName="Assets/Scripts/Module/Fight/FightMgr/Block.cs" Line="63" Column="1" />
+      <File FileName="Assets/Scripts/Module/Fight/Command/ShowPathCommand.cs" Line="74" Column="37" />
+      <File FileName="Assets/Scripts/Common/Tools.cs" Line="28" Column="67" />
+      <File FileName="Assets/Scripts/Module/Fight/Components/HeroItem.cs" Line="38" Column="15" />
+      <File FileName="Assets/Scripts/Common/AStar.cs" Line="96" Column="17" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -20,11 +20,15 @@
                 <Node name="Common" expanded="True" />
                 <Node name="Module" expanded="True">
                   <Node name="Fight" expanded="True">
+                    <Node name="Command" expanded="True" />
                     <Node name="Components" expanded="True" />
-                    <Node name="FightMgr" expanded="True" />
-                    <Node name="FightController.cs" selected="True" />
+                    <Node name="FightMgr" expanded="True">
+                      <Node name="MapMgr.cs" selected="True" />
+                    </Node>
                   </Node>
-                  <Node name="GameUI" expanded="True" />
+                </Node>
+                <Node name="MVC" expanded="True">
+                  <Node name="View" expanded="True" />
                 </Node>
               </Node>
             </Node>
@@ -33,8 +37,7 @@
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
         <State>
-          <Value>col</Value>
-          <Value>col.GetComponent&lt;Block&gt;();</Value>
+          <Value>paths</Value>
         </State>
       </Pad>
     </Pads>

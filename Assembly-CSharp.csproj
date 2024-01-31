@@ -77,6 +77,7 @@
     <Compile Include="Assets/Scripts/Config/ConfigData.cs" />
     <Compile Include="Assets/Scripts/Module/Fight/FightMgr/FightUnitBase.cs" />
     <Compile Include="Assets/Scripts/MVC/ControllerMgr.cs" />
+    <Compile Include="Assets/Scripts/Module/Fight/Command/ShowPathCommand.cs" />
     <Compile Include="Assets/Scripts/Config/ConfigMgr.cs" />
     <Compile Include="Assets/Scripts/Module/Game/GameController.cs" />
     <Compile Include="Assets/Scripts/Module/Level/Component/BuildPoint.cs" />
@@ -93,8 +94,8 @@
     <Compile Include="Assets/Scripts/Common/Tools.cs" />
     <Compile Include="Assets/Scripts/GameScene.cs" />
     <Compile Include="Assets/Scripts/Module/Loading/LoadingModel.cs" />
-    <Compile Include="Assets/Scripts/GameDataManager.cs" />
     <Compile Include="Assets/Scripts/Module/Fight/FightMgr/FightPlayerUnit.cs" />
+    <Compile Include="Assets/Scripts/GameDataManager.cs" />
     <Compile Include="Assets/Scripts/Module/Loading/LoadingView.cs" />
     <Compile Include="Assets/Scripts/Timer/GameTimerData.cs" />
     <Compile Include="Assets/Scripts/Module/Level/LevelModel.cs" />
@@ -104,13 +105,18 @@
     <Compile Include="Assets/Scripts/MVC/Controller/BaseController.cs" />
     <Compile Include="Assets/Scripts/Module/GameUI/StartView.cs" />
     <Compile Include="Assets/Scripts/MVC/ViewMgr.cs" />
+    <Compile Include="Assets/Scripts/Module/Fight/Command/CommandMgr.cs" />
     <Compile Include="Assets/Scripts/MVC/View/IBaseView.cs" />
     <Compile Include="Assets/Scripts/Module/GameUI/SetView.cs" />
     <Compile Include="Assets/Scripts/Module/Fight/FightMgr/FightWorldMgr.cs" />
     <Compile Include="Assets/Scripts/MVC/ViewType.cs" />
+    <Compile Include="Assets/Scripts/Module/Fight/HeroDesView.cs" />
+    <Compile Include="Assets/Scripts/Module/Fight/EnemyDesView.cs" />
     <Compile Include="Assets/Scripts/Module/Fight/Components/HeroItem.cs" />
     <Compile Include="Assets/Scripts/Module/Level/LevelController.cs" />
+    <Compile Include="Assets/Scripts/Common/AStar.cs" />
     <Compile Include="Assets/Scripts/Module/Fight/FightView.cs" />
+    <Compile Include="Assets/Scripts/Module/Fight/Command/BaseCommand.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/Resources/Data/role.txt" />

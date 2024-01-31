@@ -57,4 +57,10 @@ public class Block : MonoBehaviour
     {
         gridSp.enabled = false;
     }
+
+    public void SetDirSp(Sprite sp,Color color)
+    {
+        dirSp.sprite = sp;
+        dirSp.color = color;
+    }
 }

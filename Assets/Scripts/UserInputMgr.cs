@@ -21,8 +21,9 @@ public class UserInputMgr
 
                 if (hit.collider != null)
                 {
+                    Debug.Log("hit.collider.name:" + hit.collider.name);
                     // 检测到碰撞体
-                    if (hit.collider.CompareTag("Hero"))
+                    if (hit.collider.CompareTag("Hero") || hit.collider.CompareTag("Enemy"))
                     {
                         // 如果点击的是英雄，执行选中操作
                         GameApp.MessageCenter.PostEvent(hit.collider.gameObject, Defines.OnSelectEvent);
