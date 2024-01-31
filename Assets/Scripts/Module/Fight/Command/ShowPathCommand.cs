@@ -68,12 +68,28 @@ public class ShowPathCommand : BaseCommand
             }
         }
 
-        for(int i = 0; i < paths.Count; i++)
+        if(paths.Count >= 2 && model.Step >= paths.Count - 1)
         {
-            BlockDirection dir = BlockDirection.down;
-            GameApp.MapMgr.SetBlockDir(paths[i].RowIndex, paths[i].ColIndex, dir, Color.yellow);
-        }
+            for (int i = 0; i < paths.Count; i++)
+            {
+                BlockDirection dir = BlockDirection.down;
 
-        prePaths = paths;
+                if(i == 0)
+                {
+                    dir = GameApp.MapMgr.GetDirection1(paths[i], paths[i + 1]);
+                }else if (i == paths.Count - 1)
+                {
+                    dir = GameApp.MapMgr.GetDirection2(paths[i], paths[i - 1]);
+                }
+                else 
+                {
+                    dir = GameApp.MapMgr.GetDirection3(paths[i - 1], paths[i], paths[i + 1]);
+                }
+
+                GameApp.MapMgr.SetBlockDir(paths[i].RowIndex, paths[i].ColIndex, dir, Color.yellow);
+            }
+
+            prePaths = paths;
+        }
     }
 }

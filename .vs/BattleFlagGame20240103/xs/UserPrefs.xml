@@ -2,13 +2,13 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Module/Fight/FightMgr/MapMgr.cs">
     <Files>
       <File FileName="Assets/Scripts/Module/Fight/FightMgr/Hero.cs" Line="31" Column="14" />
-      <File FileName="Assets/Scripts/Module/Fight/FightMgr/ModelBase.cs" Line="28" Column="1" />
+      <File FileName="Assets/Scripts/Module/Fight/FightMgr/ModelBase.cs" />
       <File FileName="Assets/Scripts/Module/Fight/FightMgr/MapMgr.cs" Line="41" Column="74" />
-      <File FileName="Assets/Scripts/Module/Fight/FightMgr/Block.cs" Line="63" Column="1" />
-      <File FileName="Assets/Scripts/Module/Fight/Command/ShowPathCommand.cs" Line="74" Column="37" />
-      <File FileName="Assets/Scripts/Common/Tools.cs" Line="28" Column="67" />
-      <File FileName="Assets/Scripts/Module/Fight/Components/HeroItem.cs" Line="38" Column="15" />
-      <File FileName="Assets/Scripts/Common/AStar.cs" Line="96" Column="17" />
+      <File FileName="Assets/Scripts/Module/Fight/FightMgr/Block.cs" />
+      <File FileName="Assets/Scripts/Module/Fight/Command/ShowPathCommand.cs" />
+      <File FileName="Assets/Scripts/Common/Tools.cs" />
+      <File FileName="Assets/Scripts/Module/Fight/Components/HeroItem.cs" />
+      <File FileName="Assets/Scripts/Common/AStar.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -23,7 +23,7 @@
                     <Node name="Command" expanded="True" />
                     <Node name="Components" expanded="True" />
                     <Node name="FightMgr" expanded="True">
-                      <Node name="MapMgr.cs" selected="True" />
+                      <Node name="Hero.cs" selected="True" />
                     </Node>
                   </Node>
                 </Node>
