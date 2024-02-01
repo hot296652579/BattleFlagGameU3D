@@ -12,7 +12,7 @@ public class OptionData
 //战斗用的数据
 public class FightModel : BaseModel
 {
-    List<OptionData> options;
+    public List<OptionData> options;
     public ConfigData optionConfig;
 
     public FightModel(BaseController ctl) : base(ctl)

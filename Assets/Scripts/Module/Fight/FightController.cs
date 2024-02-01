@@ -55,6 +55,13 @@ public class FightController : BaseController
             Sorting_Order = 2
         });
 
+        GameApp.ViewMgr.Register(ViewType.SelectOptionView, new ViewInfo()
+        {
+            PrefabName = "SelectOptionView",
+            controller = this,
+            parentTf = GameApp.ViewMgr.canvasTf
+        });
+
         InitModuleEvent();
     }
 

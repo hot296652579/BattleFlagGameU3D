@@ -87,6 +87,7 @@
     <Compile Include="Assets/Scripts/GameApp.cs" />
     <Compile Include="Assets/Scripts/Timer/TimerMgr.cs" />
     <Compile Include="Assets/Scripts/Common/Defines.cs" />
+    <Compile Include="Assets/Scripts/Module/Fight/SelectOptionView.cs" />
     <Compile Include="Assets/Scripts/Module/Fight/FightMgr/Hero.cs" />
     <Compile Include="Assets/Scripts/Timer/GameTimer.cs" />
     <Compile Include="Assets/Scripts/Module/Fight/DragHeroView.cs" />
@@ -107,6 +108,7 @@
     <Compile Include="Assets/Scripts/MVC/Controller/BaseController.cs" />
     <Compile Include="Assets/Scripts/Module/GameUI/StartView.cs" />
     <Compile Include="Assets/Scripts/MVC/ViewMgr.cs" />
+    <Compile Include="Assets/Scripts/Module/Fight/Components/OptionItem.cs" />
     <Compile Include="Assets/Scripts/Module/Fight/Command/CommandMgr.cs" />
     <Compile Include="Assets/Scripts/MVC/View/IBaseView.cs" />
     <Compile Include="Assets/Scripts/Module/GameUI/SetView.cs" />
