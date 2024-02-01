@@ -76,4 +76,43 @@ public class ModelBase : MonoBehaviour
         //bodySp.color = Color.white;
         GameApp.MapMgr.HideStepGrid(this, Step);
     }
+
+    //转向
+    public virtual void Flip()
+    {
+        Vector3 scale = transform.localScale;
+        scale.x *= -1;
+        transform.localScale = scale;
+    }
+
+    public virtual bool Move(int rowIndex,int colIndex,float dt)
+    {
+        Vector3 Pos = GameApp.MapMgr.GetBlockPos(rowIndex, colIndex);
+        Pos.z = transform.position.z;
+        if(transform.position.x > Pos.x && transform.localScale.x > 0)
+        {
+            Flip();
+        }
+        if (transform.position.x < Pos.x && transform.localScale.x < 0)
+        {
+            Flip();
+        }
+
+        //离目的地很近 返回true
+        if(Vector3.Distance(transform.position,Pos) <= 0.02f)
+        {
+            this.RowIndex = rowIndex;
+            this.ColIndex = colIndex;
+            transform.position = Pos;
+            return true;
+        }
+
+        transform.position = Vector3.MoveTowards(transform.position, Pos, dt);
+        return false;
+    }
+
+    public void PlayAni(string aniName)
+    {
+        ani.Play(aniName);
+    }
 }

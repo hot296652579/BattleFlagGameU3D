@@ -78,6 +78,7 @@
     <Compile Include="Assets/Scripts/Module/Fight/FightMgr/FightUnitBase.cs" />
     <Compile Include="Assets/Scripts/MVC/ControllerMgr.cs" />
     <Compile Include="Assets/Scripts/Module/Fight/Command/ShowPathCommand.cs" />
+    <Compile Include="Assets/Scripts/Module/Fight/FightModel.cs" />
     <Compile Include="Assets/Scripts/Config/ConfigMgr.cs" />
     <Compile Include="Assets/Scripts/Module/Game/GameController.cs" />
     <Compile Include="Assets/Scripts/Module/Level/Component/BuildPoint.cs" />
@@ -96,6 +97,7 @@
     <Compile Include="Assets/Scripts/Module/Loading/LoadingModel.cs" />
     <Compile Include="Assets/Scripts/Module/Fight/FightMgr/FightPlayerUnit.cs" />
     <Compile Include="Assets/Scripts/GameDataManager.cs" />
+    <Compile Include="Assets/Scripts/Module/Fight/Command/MoveCommand.cs" />
     <Compile Include="Assets/Scripts/Module/Loading/LoadingView.cs" />
     <Compile Include="Assets/Scripts/Timer/GameTimerData.cs" />
     <Compile Include="Assets/Scripts/Module/Level/LevelModel.cs" />

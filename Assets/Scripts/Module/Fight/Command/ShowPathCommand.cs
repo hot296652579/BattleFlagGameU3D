@@ -23,7 +23,14 @@ public class ShowPathCommand : BaseCommand
     {
         if (Input.GetMouseButtonDown(0))
         {
-            GameApp.MessageCenter.PostEvent(Defines.OnUnSelectEvent);
+            if(prePaths.Count != 0 && this.model.Step >= prePaths.Count - 1)
+            {
+                GameApp.CommandMgr.AddComand(new MoveCommand(this.model, prePaths));
+            }
+            else
+            {
+                GameApp.MessageCenter.PostEvent(Defines.OnUnSelectEvent);
+            }
             return true;
         }
 
@@ -74,22 +81,23 @@ public class ShowPathCommand : BaseCommand
             {
                 BlockDirection dir = BlockDirection.down;
 
-                if(i == 0)
+                if (i == 0)
                 {
                     dir = GameApp.MapMgr.GetDirection1(paths[i], paths[i + 1]);
-                }else if (i == paths.Count - 1)
+                }
+                else if (i == paths.Count - 1)
                 {
                     dir = GameApp.MapMgr.GetDirection2(paths[i], paths[i - 1]);
                 }
-                else 
+                else
                 {
                     dir = GameApp.MapMgr.GetDirection3(paths[i - 1], paths[i], paths[i + 1]);
                 }
 
                 GameApp.MapMgr.SetBlockDir(paths[i].RowIndex, paths[i].ColIndex, dir, Color.yellow);
             }
-
-            prePaths = paths;
         }
+
+        prePaths = paths;
     }
 }

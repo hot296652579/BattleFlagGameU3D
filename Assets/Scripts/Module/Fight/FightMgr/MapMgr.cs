@@ -69,6 +69,11 @@ public class MapMgr
         }
     }
 
+    public Vector3 GetBlockPos(int row,int col)
+    {
+        return mapArr[row, col].transform.position;
+    }
+
     public BlockType GetBlockType(int row,int col)
     {
         return mapArr[row, col].Type;

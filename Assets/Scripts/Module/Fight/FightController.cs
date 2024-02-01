@@ -6,6 +6,8 @@ public class FightController : BaseController
 {
     public FightController() : base()
     {
+        SetModel(new FightModel(this));
+
         GameApp.ViewMgr.Register(ViewType.FightView, new ViewInfo()
         {
             PrefabName = "FightView",
@@ -54,6 +56,11 @@ public class FightController : BaseController
         });
 
         InitModuleEvent();
+    }
+
+    public override void Init()
+    {
+        model.Init();
     }
 
     public override void InitModuleEvent()
