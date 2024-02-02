@@ -16,7 +16,7 @@ public class OptionItem : MonoBehaviour
     {
         GetComponent<Button>().onClick.AddListener(delegate ()
         {
-            GameApp.MessageCenter.PostEvent(op_data.EventName);
+            GameApp.MessageCenter.PostTempEvent(op_data.EventName);
             GameApp.ViewMgr.Close((int)ViewType.SelectOptionView);
         });
 

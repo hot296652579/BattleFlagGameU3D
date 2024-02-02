@@ -17,4 +17,10 @@ public static class Defines
 
     public static readonly string OnSelectEvent = "OnSelectEvent"; 
     public static readonly string OnUnSelectEvent = "OnUnSelectEvent";
+
+    //option
+    public static readonly string OnAttackEvent = "OnAttackEvent";
+    public static readonly string OnIdleEvent = "OnIdleEvent";
+    public static readonly string OnCancelEvent = "OnCancelEvent";
+    public static readonly string OnRemoveHeroToScreenEvent = "OnRemoveHeroToScreenEvent";
 }

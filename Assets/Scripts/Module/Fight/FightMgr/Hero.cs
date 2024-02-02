@@ -21,21 +21,48 @@ public class Hero : ModelBase
     {
         if(GameApp.FightWorldMgr.state == GameState.Player)
         {
-            //玩家回合才可以
-            if(IsStop == true)
-            {
-                return;
-            }
-
             if(GameApp.CommandMgr.isRunningCommand == true)
             {
                 return;
             }
 
-            GameApp.CommandMgr.AddComand(new ShowPathCommand(this));
-            base.OnSelectCallBack(arg);
+            GameApp.MessageCenter.PostEvent(Defines.OnUnSelectEvent);
+
+            if(IsStop == false)
+            {
+                //显示路径
+                GameApp.MapMgr.ShowStepGrid(this, Step);
+                //添加显示路径指令
+                GameApp.CommandMgr.AddComand(new ShowPathCommand(this));
+
+                addOptionEvents();
+            }
+            
             GameApp.ViewMgr.Open(ViewType.HeroDesView, this);
         }
+    }
+
+    private void addOptionEvents()
+    {
+        GameApp.MessageCenter.AddTempEvent(Defines.OnAttackEvent, onAttackCallBack);
+        GameApp.MessageCenter.AddTempEvent(Defines.OnIdleEvent, onIdleCallBack);
+        GameApp.MessageCenter.AddTempEvent(Defines.OnCancelEvent, onCanCelCallBack);
+    }
+
+    //攻击
+    private void onAttackCallBack(System.Object arg)
+    {
+
+    }
+    //待机
+    private void onIdleCallBack(System.Object arg)
+    {
+        IsStop = true;
+    }
+    //取消移动
+    private void onCanCelCallBack(System.Object arg)
+    {
+        GameApp.CommandMgr.UnDo();
     }
 
     protected override void OnUnSelectCallBack(object arg)
