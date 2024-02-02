@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Hero : ModelBase
+public class Hero : ModelBase,ISkill
 {
+    public SkillProperty skillPro { get ; set; }
+
     public void Init(Dictionary<string,string> data, int row,int col)
     {
         this.data = data;
@@ -15,6 +17,7 @@ public class Hero : ModelBase
         Step = int.Parse(this.data["Step"]);
         MaxHp = int.Parse(this.data["Hp"]);
         CurHp = MaxHp;
+        skillPro = new SkillProperty(int.Parse(this.data["Skill"]));
     }
 
     protected override void OnSelectCallBack(object arg)

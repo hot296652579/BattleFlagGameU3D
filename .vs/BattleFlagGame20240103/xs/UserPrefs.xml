@@ -1,10 +1,9 @@
 ﻿<Properties StartupConfiguration="{29FE7DAE-1E07-5A37-ADB5-A94DB0A7C69A}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Module/Fight/Components/OptionItem.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Module/Fight/FightMgr/Hero.cs">
     <Files>
-      <File FileName="Assets/Scripts/Module/Fight/FightMgr/Hero.cs" Line="44" Column="1" />
-      <File FileName="Assets/Scripts/Module/Fight/FightMgr/ModelBase.cs" Line="69" Column="1" />
-      <File FileName="Assets/Scripts/Common/Defines.cs" Line="25" Column="91" />
-      <File FileName="Assets/Scripts/Module/Fight/Components/OptionItem.cs" Line="19" Column="48" />
+      <File FileName="Assets/Scripts/Module/Fight/Skill/SkillProperty.cs" Line="35" Column="45" />
+      <File FileName="Assets/Scripts/Module/Fight/Skill/ISkill.cs" Line="9" Column="1" />
+      <File FileName="Assets/Scripts/Module/Fight/FightMgr/Hero.cs" Line="5" Column="25" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,10 +15,11 @@
                 <Node name="Common" expanded="True" />
                 <Node name="Module" expanded="True">
                   <Node name="Fight" expanded="True">
-                    <Node name="Components" expanded="True">
-                      <Node name="OptionItem.cs" selected="True" />
+                    <Node name="Components" expanded="True" />
+                    <Node name="FightMgr" expanded="True">
+                      <Node name="Hero.cs" selected="True" />
                     </Node>
-                    <Node name="FightMgr" expanded="True" />
+                    <Node name="Skill" expanded="True" />
                   </Node>
                 </Node>
               </Node>

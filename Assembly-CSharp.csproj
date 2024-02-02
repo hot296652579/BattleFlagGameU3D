@@ -60,6 +60,7 @@
   <ItemGroup>
     <Compile Include="Assets/Scripts/Common/_BFS.cs" />
     <Compile Include="Assets/Scripts/Module/Loading/LoadingController.cs" />
+    <Compile Include="Assets/Scripts/Module/Fight/Skill/ISkill.cs" />
     <Compile Include="Assets/Scripts/Module/GameUI/SelectLevelView.cs" />
     <Compile Include="Assets/Scripts/UserInputMgr.cs" />
     <Compile Include="Assets/Scripts/Module/Level/Component/PlayerController.cs" />
@@ -105,6 +106,7 @@
     <Compile Include="Assets/Scripts/MVC/View/BaseView.cs" />
     <Compile Include="Assets/Scripts/MVC/ControllerType.cs" />
     <Compile Include="Assets/Scripts/Module/Fight/FightMgr/ModelBase.cs" />
+    <Compile Include="Assets/Scripts/Module/Fight/Skill/SkillProperty.cs" />
     <Compile Include="Assets/Scripts/MVC/Controller/BaseController.cs" />
     <Compile Include="Assets/Scripts/Module/GameUI/StartView.cs" />
     <Compile Include="Assets/Scripts/MVC/ViewMgr.cs" />
