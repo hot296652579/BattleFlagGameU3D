@@ -93,4 +93,9 @@ public class FightWorldMgr
         b.Type = BlockType.Obstacle;
         heros.Add(hero);
     }
+
+    public void RemoveEnemy(Enemy enemy)
+    {
+        enemys.Remove(enemy);
+    }
 }
