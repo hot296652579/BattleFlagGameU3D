@@ -72,7 +72,9 @@
     <Compile Include="Assets/Scripts/Module/Fight/FightController.cs" />
     <Compile Include="Assets/Scripts/Module/GameUI/MessageView.cs" />
     <Compile Include="Assets/Scripts/Module/Fight/FightMgr/FightEnter.cs" />
+    <Compile Include="Assets/Scripts/Module/Fight/Command/ShowSkillAreaCommand.cs" />
     <Compile Include="Assets/Scripts/Module/Fight/FightMgr/Enemy.cs" />
+    <Compile Include="Assets/Scripts/Module/Fight/Command/SkillCommand.cs" />
     <Compile Include="Assets/Scripts/Module/Fight/FightMgr/FightIdle.cs" />
     <Compile Include="Assets/Scripts/Sound/SoundMgr.cs" />
     <Compile Include="Assets/Scripts/Config/ConfigData.cs" />
@@ -87,11 +89,13 @@
     <Compile Include="Assets/Scripts/Module/Fight/FightMgr/Block.cs" />
     <Compile Include="Assets/Scripts/GameApp.cs" />
     <Compile Include="Assets/Scripts/Timer/TimerMgr.cs" />
+    <Compile Include="Assets/Scripts/Module/Fight/Skill/SkillHelp.cs" />
     <Compile Include="Assets/Scripts/Common/Defines.cs" />
     <Compile Include="Assets/Scripts/Module/Fight/SelectOptionView.cs" />
     <Compile Include="Assets/Scripts/Module/Fight/FightMgr/Hero.cs" />
     <Compile Include="Assets/Scripts/Timer/GameTimer.cs" />
     <Compile Include="Assets/Scripts/Module/Fight/DragHeroView.cs" />
+    <Compile Include="Assets/Scripts/Common/DestroyObj.cs" />
     <Compile Include="Assets/Scripts/CameraMgr.cs" />
     <Compile Include="Assets/Scripts/Common/MessageCenter.cs" />
     <Compile Include="Assets/Scripts/Common/Tools.cs" />
@@ -110,6 +114,7 @@
     <Compile Include="Assets/Scripts/MVC/Controller/BaseController.cs" />
     <Compile Include="Assets/Scripts/Module/GameUI/StartView.cs" />
     <Compile Include="Assets/Scripts/MVC/ViewMgr.cs" />
+    <Compile Include="Assets/Scripts/Module/Fight/Skill/SkillMgr.cs" />
     <Compile Include="Assets/Scripts/Module/Fight/Components/OptionItem.cs" />
     <Compile Include="Assets/Scripts/Module/Fight/Command/CommandMgr.cs" />
     <Compile Include="Assets/Scripts/MVC/View/IBaseView.cs" />

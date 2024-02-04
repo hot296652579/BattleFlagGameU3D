@@ -141,11 +141,12 @@ MonoBehaviour:
   Type: 0
   MaxHp: 0
   CurHp: 0
-  RowIndex: 0
-  ColIndex: 0
+  RowIndex: 8
+  ColIndex: 16
   bodySp: {fileID: 0}
   stopObj: {fileID: 0}
   ani: {fileID: 0}
+  newSortingOrder: 99
 --- !u!1 &446098192
 GameObject:
   m_ObjectHideFlags: 0
@@ -3371,11 +3372,12 @@ MonoBehaviour:
   Type: 0
   MaxHp: 0
   CurHp: 0
-  RowIndex: 0
-  ColIndex: 0
-  bodySp: {fileID: 0}
-  stopObj: {fileID: 0}
+  RowIndex: 7
+  ColIndex: 14
+  bodySp: {fileID: 584214539}
+  stopObj: {fileID: 740205292}
   ani: {fileID: 0}
+  newSortingOrder: 99
 --- !u!61 &811419531
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3429,7 +3431,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 811419529}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.57, y: 1.11, z: 1}
+  m_LocalPosition: {x: 4.5, y: 1.5, z: -1}
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3480,6 +3482,7 @@ MonoBehaviour:
   bodySp: {fileID: 0}
   stopObj: {fileID: 0}
   ani: {fileID: 0}
+  newSortingOrder: 99
 --- !u!61 &1132412851
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4054,7 +4057,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1590390433635993569}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.53, y: 2.22, z: 1}
+  m_LocalPosition: {x: 6.5, y: 2.5, z: -1}
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

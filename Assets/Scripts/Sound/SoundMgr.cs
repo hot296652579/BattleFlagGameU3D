@@ -6,6 +6,7 @@ public class SoundMgr
 {
     private AudioSource bgmSource;
     private Dictionary<string, AudioClip> clips;
+    bool isStop = false;
 
     public SoundMgr()
     {
@@ -24,5 +25,21 @@ public class SoundMgr
 
         bgmSource.clip = clips[res];
         bgmSource.Play();
+    }
+
+    public void PlayEffect(string name,Vector3 pos)
+    {
+
+        if (isStop == true)
+        {
+            return;
+        }
+        AudioClip clip = null;
+        if(clips.ContainsKey(name) == false)
+        {
+            clip = Resources.Load<AudioClip>($"Sounds/{name}");
+            clips.Add(name, clip);
+        }
+        AudioSource.PlayClipAtPoint(clips[name], pos);
     }
 }

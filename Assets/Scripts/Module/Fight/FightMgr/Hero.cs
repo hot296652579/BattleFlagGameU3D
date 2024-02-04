@@ -55,8 +55,8 @@ public class Hero : ModelBase,ISkill
     //攻击
     private void onAttackCallBack(System.Object arg)
     {
-
-    }
+        GameApp.CommandMgr.AddComand(new ShowSkillAreaCommand(this));
+    } 
     //待机
     private void onIdleCallBack(System.Object arg)
     {
@@ -72,5 +72,15 @@ public class Hero : ModelBase,ISkill
     {
         base.OnUnSelectCallBack(arg);
         GameApp.ViewMgr.Close((int)ViewType.HeroDesView);
+    }
+
+    public void ShowSkillArea()
+    {
+        GameApp.MapMgr.ShowAttackStep(this, skillPro.AttackRange, Color.red);
+    }
+
+    public void HideSkillArea()
+    {
+        GameApp.MapMgr.HideAttackStep(this, skillPro.AttackRange);
     }
 }

@@ -115,4 +115,36 @@ public class ModelBase : MonoBehaviour
     {
         ani.Play(aniName);
     }
+
+    public virtual void GetHit(ISkill skill)
+    {
+
+    }
+
+    public virtual void PlayEffect(string name)
+    {
+        GameObject obj = Instantiate(Resources.Load($"Effect/{name}")) as GameObject;
+        obj.transform.position = transform.position;
+    }
+
+    //计算两个model的距离
+    public float GetDis(ModelBase model)
+    {
+        return Mathf.Abs(RowIndex - model.RowIndex) + Mathf.Abs(ColIndex - model.ColIndex);
+    }
+
+    public void PlaySound(string name)
+    {
+        GameApp.SoundManager.PlayEffect(name, transform.position);
+    }
+
+    public void LookAtModel(ModelBase model)
+    {
+        if((model.transform.position.x > transform.position.x) && transform.localScale.x < 0){
+            Flip();
+        }else if((model.transform.position.x < transform.position.x) && transform.localScale.x > 0)
+        {
+            Flip();
+        }
+    }
 }
