@@ -24,18 +24,23 @@ public class Block : MonoBehaviour
         gridSp = transform.Find("grid").GetComponent<SpriteRenderer>();
         dirSp = transform.Find("dir").GetComponent<SpriteRenderer>();
 
-        GameApp.MessageCenter.AddEvent(gameObject, Defines.OnSelectEvent, OnSelectCallBack);
+        GameApp.MessageCenter.AddEvent(Defines.OnSelectEvent, OnSelectCallBack);
         GameApp.MessageCenter.AddEvent(Defines.OnUnSelectEvent, OnUnSelectCallBack);
     }
 
     void OnSelectCallBack(System.Object arg)
     {
         GameApp.MessageCenter.PostEvent(Defines.OnUnSelectEvent);
+        if(GameApp.CommandMgr.isRunningCommand == false)
+        {
+            GameApp.ViewMgr.Open(ViewType.FightOptionDesView);
+        }
     }
 
     void OnUnSelectCallBack(System.Object arg)
     {
         dirSp.sprite = null;
+        GameApp.ViewMgr.Close((int)ViewType.FightOptionDesView);
     }
 
     private void OnDestroy()

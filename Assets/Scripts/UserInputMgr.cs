@@ -31,7 +31,7 @@ public class UserInputMgr
                     else if (hit.collider.CompareTag("Block"))
                     {
                         // 如果点击的是 Block，执行取消选中英雄的操作
-                        GameApp.MessageCenter.PostEvent(Defines.OnUnSelectEvent);
+                        GameApp.MessageCenter.PostEvent(Defines.OnSelectEvent);
                     }
                 }
             }

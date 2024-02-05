@@ -112,6 +112,7 @@
     <Compile Include="Assets/Scripts/Module/Fight/FightMgr/ModelBase.cs" />
     <Compile Include="Assets/Scripts/Module/Fight/Skill/SkillProperty.cs" />
     <Compile Include="Assets/Scripts/MVC/Controller/BaseController.cs" />
+    <Compile Include="Assets/Scripts/Module/Fight/FightOptionDesView.cs" />
     <Compile Include="Assets/Scripts/Module/GameUI/StartView.cs" />
     <Compile Include="Assets/Scripts/MVC/ViewMgr.cs" />
     <Compile Include="Assets/Scripts/Module/Fight/Skill/SkillMgr.cs" />
