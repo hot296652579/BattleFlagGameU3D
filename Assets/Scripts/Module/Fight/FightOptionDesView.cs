@@ -21,6 +21,7 @@ public class FightOptionDesView : BaseView
     private void onChangeEnemyTurnBtn()
     {
         GameApp.ViewMgr.Close((int)ViewType.FightOptionDesView);
+        GameApp.FightWorldMgr.ChangeState(GameState.Enemy);
     }
 
     private void onCancelBtn()

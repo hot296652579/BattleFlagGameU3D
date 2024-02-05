@@ -8,6 +8,7 @@ public class FightPlayerUnit : FightUnitBase
     {
         base.Init();
         Debug.Log("玩家回合");
+        GameApp.FightWorldMgr.ResetEnemys();
         GameApp.ViewMgr.Open(ViewType.TipView, "玩家回合");
     }
 }

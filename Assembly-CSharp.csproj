@@ -85,9 +85,11 @@
     <Compile Include="Assets/Scripts/Config/ConfigMgr.cs" />
     <Compile Include="Assets/Scripts/Module/Game/GameController.cs" />
     <Compile Include="Assets/Scripts/Module/Level/Component/BuildPoint.cs" />
+    <Compile Include="Assets/Scripts/Module/Fight/FightEnemyUnit.cs" />
     <Compile Include="Assets/Scripts/Module/GameUIController.cs" />
     <Compile Include="Assets/Scripts/Module/Fight/FightMgr/Block.cs" />
     <Compile Include="Assets/Scripts/GameApp.cs" />
+    <Compile Include="Assets/Scripts/Module/Fight/Command/WaitCommand.cs" />
     <Compile Include="Assets/Scripts/Timer/TimerMgr.cs" />
     <Compile Include="Assets/Scripts/Module/Fight/Skill/SkillHelp.cs" />
     <Compile Include="Assets/Scripts/Common/Defines.cs" />

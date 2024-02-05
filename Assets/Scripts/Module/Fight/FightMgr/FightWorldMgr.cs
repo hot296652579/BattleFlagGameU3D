@@ -6,7 +6,8 @@ public enum GameState
 {
     Idle,
     Enter,
-    Player
+    Player,
+    Enemy
 }
 
 //战斗管理器 （管理战斗相关实体 敌人英雄地图格子等）
@@ -60,6 +61,9 @@ public class FightWorldMgr
             case GameState.Player:
                 _current = new FightPlayerUnit();
                 break;
+            case GameState.Enemy:
+                _current = new FightEnemyUnit();
+                break;
         }
 
         _current.Init();
@@ -97,5 +101,21 @@ public class FightWorldMgr
     public void RemoveEnemy(Enemy enemy)
     {
         enemys.Remove(enemy);
+    }
+
+    public void ResetHeros()
+    {
+        for(int i = 0; i <heros.Count; i++)
+        {
+            heros[i].IsStop = false;
+        }
+    }
+
+    public void ResetEnemys()
+    {
+        for(int i = 0; i < enemys.Count; i++)
+        {
+            enemys[i].IsStop = false;
+        }
     }
 }
