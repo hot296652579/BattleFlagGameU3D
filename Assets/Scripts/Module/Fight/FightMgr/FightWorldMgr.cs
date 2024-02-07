@@ -118,4 +118,26 @@ public class FightWorldMgr
             enemys[i].IsStop = false;
         }
     }
+
+    //获取最近的英雄
+    public ModelBase GetMinDisHero(ModelBase model)
+    {
+        if(heros.Count == 0)
+        {
+            return null;
+        }
+
+        Hero hero = heros[0];
+        float min_dis = hero.GetDis(model);
+        for(int i = 1; i < heros.Count; i++)
+        {
+            float dis = heros[i].GetDis(model);
+            if(dis < min_dis)
+            {
+                min_dis = dis;
+                hero = heros[i];
+            }
+        }
+        return hero;
+    }
 }

@@ -1,19 +1,10 @@
 ﻿<Properties StartupConfiguration="{29FE7DAE-1E07-5A37-ADB5-A94DB0A7C69A}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Module/Fight/Command/BaseCommand.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Module/Fight/FightEnemyUnit.cs">
     <Files>
-      <File FileName="Assets/Scripts/Common/Tools.cs" Line="16" Column="1" />
-      <File FileName="Assets/Scripts/UserInputMgr.cs" Line="34" Column="1" />
-      <File FileName="Assets/Scripts/MVC/ViewMgr.cs" Line="200" Column="30" />
-      <File FileName="Assets/Scripts/Module/Fight/FightMgr/Enemy.cs" Line="77" Column="42" />
-      <File FileName="Assets/Scripts/Module/Fight/FightMgr/FightWorldMgr.cs" Line="113" Column="1" />
-      <File FileName="Assets/Scripts/Module/Fight/FightOptionDesView.cs" Line="23" Column="65" />
-      <File FileName="Assets/Scripts/MVC/ViewType.cs" Line="10" Column="13" />
-      <File FileName="Assets/Scripts/Module/Fight/FightController.cs" Line="70" Column="30" />
-      <File FileName="Assets/Scripts/Module/Fight/FightMgr/Block.cs" Line="23" Column="76" />
-      <File FileName="Assets/Scripts/Module/Fight/FightEnemyUnit.cs" Line="10" Column="44" />
-      <File FileName="Assets/Scripts/Module/Fight/FightMgr/FightPlayerUnit.cs" Line="8" Column="6" />
-      <File FileName="Assets/Scripts/Module/Fight/Command/WaitCommand.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Module/Fight/Command/BaseCommand.cs" Line="10" Column="1" />
+      <File FileName="Assets/Scripts/Module/Fight/FightMgr/FightWorldMgr.cs" Line="122" Column="14" />
+      <File FileName="Assets/Scripts/Common/_BFS.cs" Line="144" Column="33" />
+      <File FileName="Assets/Scripts/Module/Fight/Command/AIMoveCommand.cs" Line="53" Column="13" />
+      <File FileName="Assets/Scripts/Module/Fight/FightEnemyUnit.cs" Line="22" Column="58" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -24,12 +15,11 @@
                 <Node name="Common" expanded="True" />
                 <Node name="Module" expanded="True">
                   <Node name="Fight" expanded="True">
-                    <Node name="Command" expanded="True">
-                      <Node name="BaseCommand.cs" selected="True" />
-                    </Node>
+                    <Node name="Command" expanded="True" />
                     <Node name="Components" expanded="True" />
                     <Node name="FightMgr" expanded="True" />
                     <Node name="Skill" expanded="True" />
+                    <Node name="FightEnemyUnit.cs" selected="True" />
                   </Node>
                   <Node name="Game" expanded="True" />
                 </Node>

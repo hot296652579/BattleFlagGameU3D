@@ -109,6 +109,7 @@
     <Compile Include="Assets/Scripts/Module/Loading/LoadingView.cs" />
     <Compile Include="Assets/Scripts/Timer/GameTimerData.cs" />
     <Compile Include="Assets/Scripts/Module/Level/LevelModel.cs" />
+    <Compile Include="Assets/Scripts/Module/Fight/Command/AIMoveCommand.cs" />
     <Compile Include="Assets/Scripts/MVC/View/BaseView.cs" />
     <Compile Include="Assets/Scripts/MVC/ControllerType.cs" />
     <Compile Include="Assets/Scripts/Module/Fight/FightMgr/ModelBase.cs" />
